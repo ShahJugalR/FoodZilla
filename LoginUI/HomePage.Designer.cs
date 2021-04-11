@@ -30,15 +30,15 @@ namespace LoginUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.LoadProfileButton = new System.Windows.Forms.Button();
             this.Show_restaurants_table = new Guna.UI2.WinForms.Guna2DataGridView();
             this.RestaurantField = new Guna.UI2.WinForms.Guna2TextBox();
             this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.Profile = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show_restaurants_table)).BeginInit();
             this.SuspendLayout();
@@ -66,42 +66,32 @@ namespace LoginUI
             this.label1.TabIndex = 13;
             this.label1.Text = "Search Restaurant";
             // 
-            // LoadProfileButton
-            // 
-            this.LoadProfileButton.Location = new System.Drawing.Point(930, 12);
-            this.LoadProfileButton.Name = "LoadProfileButton";
-            this.LoadProfileButton.Size = new System.Drawing.Size(105, 97);
-            this.LoadProfileButton.TabIndex = 27;
-            this.LoadProfileButton.Text = "Profile";
-            this.LoadProfileButton.UseVisualStyleBackColor = true;
-            this.LoadProfileButton.Click += new System.EventHandler(this.LoadProfileButton_Click);
-            // 
             // Show_restaurants_table
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Show_restaurants_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Show_restaurants_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Show_restaurants_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Show_restaurants_table.BackgroundColor = System.Drawing.Color.White;
             this.Show_restaurants_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Show_restaurants_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Show_restaurants_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Show_restaurants_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Show_restaurants_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.Show_restaurants_table.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Show_restaurants_table.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Show_restaurants_table.DefaultCellStyle = dataGridViewCellStyle6;
             this.Show_restaurants_table.EnableHeadersVisualStyles = false;
             this.Show_restaurants_table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Show_restaurants_table.Location = new System.Drawing.Point(12, 125);
@@ -162,6 +152,7 @@ namespace LoginUI
             // 
             // SearchButton
             // 
+            this.SearchButton.Animated = true;
             this.SearchButton.CheckedState.Parent = this.SearchButton;
             this.SearchButton.CustomImages.Parent = this.SearchButton;
             this.SearchButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -175,6 +166,28 @@ namespace LoginUI
             this.SearchButton.Text = "Search";
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
+            // Profile
+            // 
+            this.Profile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Profile.Animated = true;
+            this.Profile.BackColor = System.Drawing.Color.Transparent;
+            this.Profile.BackgroundImage = global::FoodZilla.Properties.Resources.UserAvatar;
+            this.Profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Profile.CheckedState.Parent = this.Profile;
+            this.Profile.CustomImages.Parent = this.Profile;
+            this.Profile.FillColor = System.Drawing.Color.Transparent;
+            this.Profile.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Profile.ForeColor = System.Drawing.Color.White;
+            this.Profile.HoverState.Parent = this.Profile;
+            this.Profile.Location = new System.Drawing.Point(981, 9);
+            this.Profile.Name = "Profile";
+            this.Profile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Profile.ShadowDecoration.Parent = this.Profile;
+            this.Profile.Size = new System.Drawing.Size(50, 50);
+            this.Profile.TabIndex = 34;
+            this.Profile.UseTransparentBackground = true;
+            this.Profile.Click += new System.EventHandler(this.LoadProfileButton_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,10 +195,10 @@ namespace LoginUI
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1047, 645);
             this.ControlBox = false;
+            this.Controls.Add(this.Profile);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.RestaurantField);
             this.Controls.Add(this.Show_restaurants_table);
-            this.Controls.Add(this.LoadProfileButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -203,10 +216,10 @@ namespace LoginUI
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button LoadProfileButton;
         private Guna.UI2.WinForms.Guna2DataGridView Show_restaurants_table;
         private Guna.UI2.WinForms.Guna2TextBox RestaurantField;
         private Guna.UI2.WinForms.Guna2Button SearchButton;
+        private Guna.UI2.WinForms.Guna2CircleButton Profile;
     }
 }
 

@@ -35,13 +35,13 @@ namespace LoginUI
             this.UsernameLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.LoginPasswordField = new System.Windows.Forms.TextBox();
-            this.LoginButton = new System.Windows.Forms.Button();
             this.TroubleLoggingButton = new System.Windows.Forms.Button();
             this.newHereButton = new System.Windows.Forms.Button();
             this.captchaLabel = new System.Windows.Forms.Label();
             this.LoginCaptchaField = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picture = new System.Windows.Forms.PictureBox();
+            this.LoginButton = new Guna.UI2.WinForms.Guna2Button();
+            this.picture = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
@@ -107,22 +107,6 @@ namespace LoginUI
             this.LoginPasswordField.PasswordChar = '*';
             this.LoginPasswordField.Size = new System.Drawing.Size(355, 47);
             this.LoginPasswordField.TabIndex = 3;
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.LoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Location = new System.Drawing.Point(71, 488);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(355, 47);
-            this.LoginButton.TabIndex = 5;
-            this.LoginButton.Text = "LOG IN";
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // TroubleLoggingButton
             // 
@@ -197,14 +181,37 @@ namespace LoginUI
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // LoginButton
+            // 
+            this.LoginButton.Animated = true;
+            this.LoginButton.BackColor = System.Drawing.Color.Transparent;
+            this.LoginButton.CheckedState.Parent = this.LoginButton;
+            this.LoginButton.CustomImages.Parent = this.LoginButton;
+            this.LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.LoginButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.HoverState.Parent = this.LoginButton;
+            this.LoginButton.IndicateFocus = true;
+            this.LoginButton.Location = new System.Drawing.Point(71, 488);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.ShadowDecoration.Parent = this.LoginButton;
+            this.LoginButton.Size = new System.Drawing.Size(357, 47);
+            this.LoginButton.TabIndex = 14;
+            this.LoginButton.Text = "LOGIN";
+            this.LoginButton.UseTransparentBackground = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            // 
             // picture
             // 
-            this.picture.Location = new System.Drawing.Point(250, 349);
+            this.picture.BackColor = System.Drawing.Color.Transparent;
+            this.picture.Location = new System.Drawing.Point(250, 347);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(178, 94);
+            this.picture.ShadowDecoration.Parent = this.picture;
+            this.picture.Size = new System.Drawing.Size(178, 96);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picture.TabIndex = 13;
+            this.picture.TabIndex = 15;
             this.picture.TabStop = false;
+            this.picture.UseTransparentBackground = true;
             // 
             // LoginForm
             // 
@@ -214,12 +221,12 @@ namespace LoginUI
             this.ClientSize = new System.Drawing.Size(505, 612);
             this.ControlBox = false;
             this.Controls.Add(this.picture);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LoginCaptchaField);
             this.Controls.Add(this.captchaLabel);
             this.Controls.Add(this.newHereButton);
             this.Controls.Add(this.TroubleLoggingButton);
-            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LoginPasswordField);
             this.Controls.Add(this.UsernameLabel);
@@ -245,13 +252,13 @@ namespace LoginUI
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.TextBox LoginPasswordField;
-        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Button TroubleLoggingButton;
         private System.Windows.Forms.Button newHereButton;
         private System.Windows.Forms.Label captchaLabel;
         private System.Windows.Forms.TextBox LoginCaptchaField;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox picture;
+        private Guna.UI2.WinForms.Guna2Button LoginButton;
+        private Guna.UI2.WinForms.Guna2PictureBox picture;
     }
 }
 
