@@ -30,11 +30,14 @@ namespace LoginUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestaurantView));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Restaurant_name = new System.Windows.Forms.Label();
-            this.ITEMField = new System.Windows.Forms.TextBox();
-            this.Show_items_table = new System.Windows.Forms.DataGridView();
-            this.SearchButton = new System.Windows.Forms.Button();
+            this.ITEMField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.Show_items_table = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show_items_table)).BeginInit();
             this.SuspendLayout();
@@ -64,32 +67,101 @@ namespace LoginUI
             // 
             // ITEMField
             // 
-            this.ITEMField.Location = new System.Drawing.Point(12, 96);
+            this.ITEMField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ITEMField.DefaultText = "";
+            this.ITEMField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ITEMField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ITEMField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ITEMField.DisabledState.Parent = this.ITEMField;
+            this.ITEMField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ITEMField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ITEMField.FocusedState.Parent = this.ITEMField;
+            this.ITEMField.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ITEMField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ITEMField.HoverState.Parent = this.ITEMField;
+            this.ITEMField.Location = new System.Drawing.Point(13, 96);
             this.ITEMField.Name = "ITEMField";
-            this.ITEMField.Size = new System.Drawing.Size(579, 22);
-            this.ITEMField.TabIndex = 28;
-            this.ITEMField.Text = "Enter ITEM Name Here";
-            // 
-            // Show_items_table
-            // 
-            this.Show_items_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Show_items_table.Location = new System.Drawing.Point(12, 124);
-            this.Show_items_table.Name = "Show_items_table";
-            this.Show_items_table.RowHeadersWidth = 51;
-            this.Show_items_table.RowTemplate.Height = 24;
-            this.Show_items_table.Size = new System.Drawing.Size(1023, 509);
-            this.Show_items_table.TabIndex = 29;
-            this.Show_items_table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Show_restaurants_table_CellClick);
+            this.ITEMField.PasswordChar = '\0';
+            this.ITEMField.PlaceholderText = "";
+            this.ITEMField.SelectedText = "";
+            this.ITEMField.ShadowDecoration.Parent = this.ITEMField;
+            this.ITEMField.Size = new System.Drawing.Size(579, 28);
+            this.ITEMField.TabIndex = 31;
             // 
             // SearchButton
             // 
+            this.SearchButton.CheckedState.Parent = this.SearchButton;
+            this.SearchButton.CustomImages.Parent = this.SearchButton;
+            this.SearchButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SearchButton.ForeColor = System.Drawing.Color.White;
+            this.SearchButton.HoverState.Parent = this.SearchButton;
             this.SearchButton.Location = new System.Drawing.Point(598, 96);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(207, 23);
-            this.SearchButton.TabIndex = 30;
+            this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
+            this.SearchButton.Size = new System.Drawing.Size(250, 28);
+            this.SearchButton.TabIndex = 32;
             this.SearchButton.Text = "Search";
-            this.SearchButton.UseVisualStyleBackColor = true;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            this.SearchButton.DoubleClick += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // Show_items_table
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Show_items_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.Show_items_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Show_items_table.BackgroundColor = System.Drawing.Color.White;
+            this.Show_items_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Show_items_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Show_items_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Show_items_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Show_items_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Show_items_table.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Show_items_table.EnableHeadersVisualStyles = false;
+            this.Show_items_table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Show_items_table.Location = new System.Drawing.Point(13, 131);
+            this.Show_items_table.Name = "Show_items_table";
+            this.Show_items_table.RowHeadersVisible = false;
+            this.Show_items_table.RowHeadersWidth = 51;
+            this.Show_items_table.RowTemplate.Height = 24;
+            this.Show_items_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Show_items_table.Size = new System.Drawing.Size(1022, 502);
+            this.Show_items_table.TabIndex = 33;
+            this.Show_items_table.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Show_items_table.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Show_items_table.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Show_items_table.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Show_items_table.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Show_items_table.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Show_items_table.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Show_items_table.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Show_items_table.ThemeStyle.HeaderStyle.Height = 4;
+            this.Show_items_table.ThemeStyle.ReadOnly = false;
+            this.Show_items_table.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Show_items_table.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Show_items_table.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Show_items_table.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Show_items_table.ThemeStyle.RowsStyle.Height = 24;
+            this.Show_items_table.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Show_items_table.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Show_items_table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Show_restaurants_table_CellClick);
             // 
             // RestaurantView
             // 
@@ -98,8 +170,8 @@ namespace LoginUI
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1047, 645);
             this.ControlBox = false;
-            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.Show_items_table);
+            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.ITEMField);
             this.Controls.Add(this.Restaurant_name);
             this.Controls.Add(this.pictureBox1);
@@ -118,9 +190,9 @@ namespace LoginUI
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Restaurant_name;
-        private System.Windows.Forms.TextBox ITEMField;
-        private System.Windows.Forms.DataGridView Show_items_table;
-        private System.Windows.Forms.Button SearchButton;
+        private Guna.UI2.WinForms.Guna2TextBox ITEMField;
+        private Guna.UI2.WinForms.Guna2Button SearchButton;
+        private Guna.UI2.WinForms.Guna2DataGridView Show_items_table;
     }
 }
 
