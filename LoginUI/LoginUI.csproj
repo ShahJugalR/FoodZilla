@@ -303,6 +303,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1486071980-1_79325.ico" />
+    <None Include="Readme\FoodZilla_Documentation.pdf" />
     <None Include="Resources\Bug-icon.png" />
     <None Include="Resources\NicePng_close-icon-png_4701041.png" />
     <None Include="Resources\NicePng_close-icon-png_470104.png" />
@@ -312,6 +313,7 @@
     <None Include="Resources\UserAvatar.png" />
     <None Include="Resources\ProfileAvatar.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

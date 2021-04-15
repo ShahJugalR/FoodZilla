@@ -90,12 +90,12 @@ namespace LoginUI
 
         private void Show_restaurants_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 8)
+            if(e.ColumnIndex == Show_items_table.ColumnCount-1)
             {
                 DataRow messageText = ds.Tables[0].Rows[e.RowIndex];
 
 
-                string cmdtext = $"[dbo].[CancelOrder] {messageText[0].ToString()}";
+                string cmdtext = $"[dbo].[cancel_order] {messageText[0].ToString()}";
 
                 SqlCommand cmd = new SqlCommand(cmdtext, connection);
 
