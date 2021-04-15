@@ -36,11 +36,12 @@ namespace LoginUI
             this.myOrdersButton = new System.Windows.Forms.Button();
             this.reportBugButton = new System.Windows.Forms.Button();
             this.VersionNo = new System.Windows.Forms.Label();
+            this.UpdateAvailableLabel = new System.Windows.Forms.Label();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.CheckForUpdatesButton = new System.Windows.Forms.Button();
-            this.UserProfileSettingsButton = new System.Windows.Forms.Button();
             this.AvatarImage = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UpdateAvailableLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -128,8 +129,9 @@ namespace LoginUI
             this.reportBugButton.Name = "reportBugButton";
             this.reportBugButton.Size = new System.Drawing.Size(355, 47);
             this.reportBugButton.TabIndex = 16;
-            this.reportBugButton.Text = "REPORT A BUG";
+            this.reportBugButton.Text = "UPDATE NAME AND ADDRESS";
             this.reportBugButton.UseVisualStyleBackColor = false;
+            this.reportBugButton.Click += new System.EventHandler(this.UserProfileSettingsButton_Click);
             // 
             // VersionNo
             // 
@@ -142,6 +144,60 @@ namespace LoginUI
             this.VersionNo.Size = new System.Drawing.Size(80, 23);
             this.VersionNo.TabIndex = 18;
             this.VersionNo.Text = "v0.2(Beta)";
+            // 
+            // UpdateAvailableLabel
+            // 
+            this.UpdateAvailableLabel.AutoSize = true;
+            this.UpdateAvailableLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UpdateAvailableLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 8.2F);
+            this.UpdateAvailableLabel.ForeColor = System.Drawing.Color.White;
+            this.UpdateAvailableLabel.Location = new System.Drawing.Point(12, 55);
+            this.UpdateAvailableLabel.Name = "UpdateAvailableLabel";
+            this.UpdateAvailableLabel.Size = new System.Drawing.Size(102, 19);
+            this.UpdateAvailableLabel.TabIndex = 21;
+            this.UpdateAvailableLabel.Text = "v0.22 Available!";
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Image = global::FoodZilla.Properties.Resources.Bug_icon;
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton2.IndicateFocus = true;
+            this.guna2ImageButton2.Location = new System.Drawing.Point(223, 494);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton2.TabIndex = 23;
+            this.guna2ImageButton2.UseTransparentBackground = true;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.reportBugButton_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = global::FoodZilla.Properties.Resources.NicePng_close_icon_png_470104;
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton1.IndicateFocus = true;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(429, 12);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton1.TabIndex = 22;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.CloseWindow_Click);
             // 
             // CheckForUpdatesButton
             // 
@@ -159,27 +215,9 @@ namespace LoginUI
             this.CheckForUpdatesButton.UseVisualStyleBackColor = false;
             this.CheckForUpdatesButton.Click += new System.EventHandler(this.CheckForUpdatesButton_Click);
             // 
-            // UserProfileSettingsButton
-            // 
-            this.UserProfileSettingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UserProfileSettingsButton.BackColor = System.Drawing.Color.Transparent;
-            this.UserProfileSettingsButton.BackgroundImage = global::FoodZilla.Properties.Resources.SettingsIcon;
-            this.UserProfileSettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.UserProfileSettingsButton.FlatAppearance.BorderSize = 0;
-            this.UserProfileSettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserProfileSettingsButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.UserProfileSettingsButton.Location = new System.Drawing.Point(453, 12);
-            this.UserProfileSettingsButton.Name = "UserProfileSettingsButton";
-            this.UserProfileSettingsButton.Size = new System.Drawing.Size(40, 40);
-            this.UserProfileSettingsButton.TabIndex = 19;
-            this.UserProfileSettingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.UserProfileSettingsButton.UseVisualStyleBackColor = false;
-            this.UserProfileSettingsButton.Click += new System.EventHandler(this.UserProfileSettingsButton_Click);
-            // 
             // AvatarImage
             // 
-            this.AvatarImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AvatarImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AvatarImage.BackColor = System.Drawing.Color.Transparent;
             this.AvatarImage.Image = global::FoodZilla.Properties.Resources.UserAvatar;
             this.AvatarImage.Location = new System.Drawing.Point(197, 23);
@@ -198,27 +236,16 @@ namespace LoginUI
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // UpdateAvailableLabel
-            // 
-            this.UpdateAvailableLabel.AutoSize = true;
-            this.UpdateAvailableLabel.BackColor = System.Drawing.Color.Transparent;
-            this.UpdateAvailableLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 8.2F);
-            this.UpdateAvailableLabel.ForeColor = System.Drawing.Color.White;
-            this.UpdateAvailableLabel.Location = new System.Drawing.Point(12, 55);
-            this.UpdateAvailableLabel.Name = "UpdateAvailableLabel";
-            this.UpdateAvailableLabel.Size = new System.Drawing.Size(102, 19);
-            this.UpdateAvailableLabel.TabIndex = 21;
-            this.UpdateAvailableLabel.Text = "v0.22 Available!";
-            // 
             // MyProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(505, 560);
+            this.Controls.Add(this.guna2ImageButton2);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.UpdateAvailableLabel);
             this.Controls.Add(this.CheckForUpdatesButton);
-            this.Controls.Add(this.UserProfileSettingsButton);
             this.Controls.Add(this.VersionNo);
             this.Controls.Add(this.AvatarImage);
             this.Controls.Add(this.reportBugButton);
@@ -249,9 +276,10 @@ namespace LoginUI
         private System.Windows.Forms.Button reportBugButton;
         private System.Windows.Forms.PictureBox AvatarImage;
         private System.Windows.Forms.Label VersionNo;
-        private System.Windows.Forms.Button UserProfileSettingsButton;
         private System.Windows.Forms.Button CheckForUpdatesButton;
         private System.Windows.Forms.Label UpdateAvailableLabel;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
     }
 }
 

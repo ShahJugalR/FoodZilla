@@ -144,7 +144,7 @@ namespace LoginUI
             this.RestaurantField.Location = new System.Drawing.Point(13, 97);
             this.RestaurantField.Name = "RestaurantField";
             this.RestaurantField.PasswordChar = '\0';
-            this.RestaurantField.PlaceholderText = "";
+            this.RestaurantField.PlaceholderText = "Backend Issue Dont use this field  [Not a frontend issue]";
             this.RestaurantField.SelectedText = "";
             this.RestaurantField.ShadowDecoration.Parent = this.RestaurantField;
             this.RestaurantField.Size = new System.Drawing.Size(579, 22);
@@ -179,6 +179,7 @@ namespace LoginUI
             this.Profile.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Profile.ForeColor = System.Drawing.Color.White;
             this.Profile.HoverState.Parent = this.Profile;
+            this.Profile.IndicateFocus = true;
             this.Profile.Location = new System.Drawing.Point(981, 9);
             this.Profile.Name = "Profile";
             this.Profile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;

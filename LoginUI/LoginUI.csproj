@@ -303,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1486071980-1_79325.ico" />
+    <None Include="Resources\Bug-icon.png" />
+    <None Include="Resources\NicePng_close-icon-png_4701041.png" />
+    <None Include="Resources\NicePng_close-icon-png_470104.png" />
     <None Include="Resources\CheckForUpdates.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\Avatar.png" />

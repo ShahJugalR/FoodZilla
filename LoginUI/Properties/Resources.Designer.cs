@@ -63,9 +63,39 @@ namespace FoodZilla.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bug_icon {
+            get {
+                object obj = ResourceManager.GetObject("Bug-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CheckForUpdates {
             get {
                 object obj = ResourceManager.GetObject("CheckForUpdates", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_close_icon_png_470104 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_close-icon-png_470104", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NicePng_close_icon_png_4701041 {
+            get {
+                object obj = ResourceManager.GetObject("NicePng_close-icon-png_4701041", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -165,5 +165,16 @@ namespace LoginUI
 
             updateDetailsUI.Focus();
         }
+
+        private void reportBugButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://drive.google.com/file/d/13ZSj1VpL48AUkhbqmAs6csweKiRKrcIr/view?usp=sharing");
+        }
+
+        private void CloseWindow_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
     }
 }

@@ -23,13 +23,20 @@ namespace LoginUI
         public SqlConnection connection = new SqlConnection();
 
         string res_name;
+        int res_id;
         
-        public RestaurantView(string restaurant_name)
+        public RestaurantView(string restaurant_name,int id)
         {
             InitializeComponent();
             res_name = restaurant_name;
 
             Restaurant_name.Text = res_name;
+            res_id = id;
+
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.OpenAsync();
+            }
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
@@ -37,10 +44,20 @@ namespace LoginUI
 
             if (connection.State == ConnectionState.Closed)
             {
-                connection.Open();
+                connection.OpenAsync();
             }
 
-            string cmdtext = $"SELECT item_name, price FROM test_items where restaur_name = '{res_name}'";
+            string cmdtext = "";
+
+            if (ITEMField.Text == "")
+            {
+                cmdtext = $"[dbo].[show_items_of_restaurnat] {res_id}";
+            }
+
+            else
+            {
+                cmdtext = $"[dbo].[show_items_of_restaurnat_by_search] {res_id}, '{ITEMField.Text}'";
+            }
 
             SqlCommand cmd = new SqlCommand(cmdtext, connection);
 
@@ -51,14 +68,6 @@ namespace LoginUI
                 dataAdapter.Fill(ds);
                 Show_items_table.DataSource = ds.Tables[0];
 
-
-            }
-            try
-            {
-                MessageBox.Show(ds.Tables[0].Rows[1][1].ToString());
-            }
-            catch (Exception e1){
-                MessageBox.Show(e1.Message);
             }
 
 
@@ -87,7 +96,7 @@ namespace LoginUI
 
                 try
                 {
-                    string cmdtext = $"INSERT INTO test_order(item_name, qty, restaurant_name, price) VALUES('{messageText[0].ToString()}', 1, '{res_name}', {messageText[1]});";
+                    string cmdtext = $"[dbo].[Create_order] ";
 
                     SqlCommand cmd = new SqlCommand(cmdtext, connection);
 

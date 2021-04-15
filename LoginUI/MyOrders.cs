@@ -84,7 +84,7 @@ namespace LoginUI
 
         private void Show_restaurants_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 9)
+            if(e.ColumnIndex == 8)
             {
                 DataRow messageText = ds.Tables[0].Rows[e.RowIndex];
 
