@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ *      Shah Jugal R
+ * 
+ * 
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -96,7 +103,7 @@ namespace LoginUI
 
                 try
                 {
-                    string cmdtext = $"[dbo].[Create_order] ";
+                    string cmdtext = $"[dbo].[Create_order] 1,1, 500,1,500,8";
 
                     SqlCommand cmd = new SqlCommand(cmdtext, connection);
 
