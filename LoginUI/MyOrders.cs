@@ -21,7 +21,6 @@ namespace LoginUI
     public partial class MyOrders : Form
     {
 
-
         DataSet ds = new DataSet();
 
         public SqlConnection connection = new SqlConnection();
@@ -106,6 +105,8 @@ namespace LoginUI
 
                     MessageBox.Show("Order Cancelled");
 
+
+
                 }
                 catch (Exception eg) {
                     MessageBox.Show(eg.Message);
@@ -116,6 +117,13 @@ namespace LoginUI
         private void MyOrders_Load(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            this.Dispose();
         }
     }
 }

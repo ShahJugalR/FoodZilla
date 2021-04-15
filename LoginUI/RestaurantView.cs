@@ -112,11 +112,31 @@ namespace LoginUI
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Ordered Successfully");
+
+
+                    MyOrders mUI = new MyOrders();
+
+                    mUI.connection = connection;
+
+                    mUI.Show();
+
+                    this.Close();
+                    this.Dispose();
+
+
+
                 }
                 catch (Exception ex) {
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            this.Dispose();
         }
     }
 }

@@ -18,7 +18,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="version" Type="System.Single" Scope="User">
-      <Value Profile="(Default)">0.68</Value>
+      <Value Profile="(Default)">0.69</Value>
     </Setting>
   </Settings>
 </SettingsFile>
