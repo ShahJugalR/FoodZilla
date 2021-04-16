@@ -35,8 +35,7 @@ namespace LoginUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Restaurant_name = new System.Windows.Forms.Label();
-            this.ITEMField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.load = new Guna.UI2.WinForms.Guna2Button();
             this.Show_items_table = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Close = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,43 +65,20 @@ namespace LoginUI
             this.Restaurant_name.TabIndex = 13;
             this.Restaurant_name.Text = "Search Restaurant";
             // 
-            // ITEMField
+            // load
             // 
-            this.ITEMField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ITEMField.DefaultText = "";
-            this.ITEMField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.ITEMField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.ITEMField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ITEMField.DisabledState.Parent = this.ITEMField;
-            this.ITEMField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ITEMField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ITEMField.FocusedState.Parent = this.ITEMField;
-            this.ITEMField.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ITEMField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ITEMField.HoverState.Parent = this.ITEMField;
-            this.ITEMField.Location = new System.Drawing.Point(13, 96);
-            this.ITEMField.Name = "ITEMField";
-            this.ITEMField.PasswordChar = '\0';
-            this.ITEMField.PlaceholderText = "Search By name";
-            this.ITEMField.SelectedText = "";
-            this.ITEMField.ShadowDecoration.Parent = this.ITEMField;
-            this.ITEMField.Size = new System.Drawing.Size(579, 28);
-            this.ITEMField.TabIndex = 31;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.CheckedState.Parent = this.SearchButton;
-            this.SearchButton.CustomImages.Parent = this.SearchButton;
-            this.SearchButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SearchButton.ForeColor = System.Drawing.Color.White;
-            this.SearchButton.HoverState.Parent = this.SearchButton;
-            this.SearchButton.Location = new System.Drawing.Point(598, 96);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.ShadowDecoration.Parent = this.SearchButton;
-            this.SearchButton.Size = new System.Drawing.Size(250, 28);
-            this.SearchButton.TabIndex = 32;
-            this.SearchButton.Text = "Search";
-            this.SearchButton.DoubleClick += new System.EventHandler(this.SearchButton_Click);
+            this.load.CheckedState.Parent = this.load;
+            this.load.CustomImages.Parent = this.load;
+            this.load.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.load.ForeColor = System.Drawing.Color.White;
+            this.load.HoverState.Parent = this.load;
+            this.load.Location = new System.Drawing.Point(598, 96);
+            this.load.Name = "load";
+            this.load.ShadowDecoration.Parent = this.load;
+            this.load.Size = new System.Drawing.Size(250, 28);
+            this.load.TabIndex = 32;
+            this.load.Text = "Search";
+            this.load.DoubleClick += new System.EventHandler(this.SearchButton_Click);
             // 
             // Show_items_table
             // 
@@ -197,8 +173,7 @@ namespace LoginUI
             this.ControlBox = false;
             this.Controls.Add(this.Close);
             this.Controls.Add(this.Show_items_table);
-            this.Controls.Add(this.SearchButton);
-            this.Controls.Add(this.ITEMField);
+            this.Controls.Add(this.load);
             this.Controls.Add(this.Restaurant_name);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -216,8 +191,7 @@ namespace LoginUI
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Restaurant_name;
-        private Guna.UI2.WinForms.Guna2TextBox ITEMField;
-        private Guna.UI2.WinForms.Guna2Button SearchButton;
+        private Guna.UI2.WinForms.Guna2Button load;
         private Guna.UI2.WinForms.Guna2DataGridView Show_items_table;
         private Guna.UI2.WinForms.Guna2ImageButton Close;
     }

@@ -84,7 +84,7 @@ namespace FoodZilla.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.75")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public float version {
             get {
                 return ((float)(this["version"]));

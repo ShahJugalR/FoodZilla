@@ -130,8 +130,9 @@ new Dictionary<int, string>();
                 VerifyUI.Show();
                 this.Hide();
             }
-            catch (Exception e) {
-                MessageBox.Show(e.Message);
+            catch (SqlException eror)
+            {
+                MessageBox.Show(eror.Errors[1].Message);
             }
 
 

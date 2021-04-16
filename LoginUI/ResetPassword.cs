@@ -80,9 +80,9 @@ namespace LoginUI
                         loginUI.Show();
 
                     }
-                    catch (Exception eror)
+                    catch (SqlException eror)
                     {
-                        MessageBox.Show(eror.Message);
+                        MessageBox.Show(eror.Errors[1].Message);
                     }
                 }
                 else {

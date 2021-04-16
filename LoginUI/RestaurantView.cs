@@ -57,15 +57,8 @@ namespace LoginUI
 
             string cmdtext = "";
 
-            if (ITEMField.Text == "")
-            {
                 cmdtext = $"[dbo].[show_items_of_restaurnat] {res_id}";
-            }
-
-            else
-            {
-                cmdtext = $"[dbo].[show_items_of_restaurnat_by_search] {res_id}, '{ITEMField.Text}'";
-            }
+            
 
             SqlCommand cmd = new SqlCommand(cmdtext, connection);
 
