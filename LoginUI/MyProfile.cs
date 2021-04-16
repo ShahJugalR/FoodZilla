@@ -46,11 +46,11 @@ namespace LoginUI
             if (changeUI.IsDisposed)
             {
                 changeUI = new ChangePassword();
+                changeUI.connection = connection;
+
             }
-
-            changeUI.connection = connection;
+                    
             changeUI.Show();
-
             changeUI.Focus();
 
         }

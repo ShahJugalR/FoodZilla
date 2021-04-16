@@ -147,7 +147,7 @@ namespace LoginUI
             this.RestaurantField.Location = new System.Drawing.Point(13, 97);
             this.RestaurantField.Name = "RestaurantField";
             this.RestaurantField.PasswordChar = '\0';
-            this.RestaurantField.PlaceholderText = "Backend Issue Dont use this field  [Not a frontend issue]";
+            this.RestaurantField.PlaceholderText = "Search By Name";
             this.RestaurantField.SelectedText = "";
             this.RestaurantField.ShadowDecoration.Parent = this.RestaurantField;
             this.RestaurantField.Size = new System.Drawing.Size(579, 22);

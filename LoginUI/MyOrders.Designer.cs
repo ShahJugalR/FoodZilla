@@ -30,13 +30,10 @@ namespace LoginUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyOrders));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Restaurant_name = new System.Windows.Forms.Label();
-            this.Show_items_table = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.Show_items_table = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show_items_table)).BeginInit();
             this.SuspendLayout();
@@ -64,69 +61,6 @@ namespace LoginUI
             this.Restaurant_name.TabIndex = 13;
             this.Restaurant_name.Text = "My Orders";
             // 
-            // Show_items_table
-            // 
-            this.Show_items_table.AllowUserToAddRows = false;
-            this.Show_items_table.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.Show_items_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.Show_items_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Show_items_table.BackgroundColor = System.Drawing.Color.White;
-            this.Show_items_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Show_items_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Show_items_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Show_items_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.Show_items_table.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Show_items_table.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Show_items_table.EnableHeadersVisualStyles = false;
-            this.Show_items_table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Show_items_table.Location = new System.Drawing.Point(12, 101);
-            this.Show_items_table.Name = "Show_items_table";
-            this.Show_items_table.ReadOnly = true;
-            this.Show_items_table.RowHeadersVisible = false;
-            this.Show_items_table.RowHeadersWidth = 51;
-            this.Show_items_table.RowTemplate.Height = 24;
-            this.Show_items_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Show_items_table.Size = new System.Drawing.Size(1023, 532);
-            this.Show_items_table.TabIndex = 30;
-            this.Show_items_table.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.Show_items_table.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.Show_items_table.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.Show_items_table.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Show_items_table.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.Show_items_table.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Show_items_table.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.Show_items_table.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.Show_items_table.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.Show_items_table.ThemeStyle.HeaderStyle.Height = 4;
-            this.Show_items_table.ThemeStyle.ReadOnly = true;
-            this.Show_items_table.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.Show_items_table.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Show_items_table.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.Show_items_table.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.Show_items_table.ThemeStyle.RowsStyle.Height = 24;
-            this.Show_items_table.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Show_items_table.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.Show_items_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Show_restaurants_table_CellClick);
-            // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -148,6 +82,34 @@ namespace LoginUI
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // Show_items_table
+            // 
+            this.Show_items_table.AllowUserToAddRows = false;
+            this.Show_items_table.AllowUserToDeleteRows = false;
+            this.Show_items_table.AllowUserToResizeColumns = false;
+            this.Show_items_table.AllowUserToResizeRows = false;
+            this.Show_items_table.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Show_items_table.BackgroundColor = System.Drawing.Color.White;
+            this.Show_items_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Show_items_table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.Show_items_table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Show_items_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Show_items_table.EnableHeadersVisualStyles = false;
+            this.Show_items_table.GridColor = System.Drawing.Color.White;
+            this.Show_items_table.Location = new System.Drawing.Point(23, 78);
+            this.Show_items_table.MultiSelect = false;
+            this.Show_items_table.Name = "Show_items_table";
+            this.Show_items_table.ReadOnly = true;
+            this.Show_items_table.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Show_items_table.RowHeadersVisible = false;
+            this.Show_items_table.RowHeadersWidth = 51;
+            this.Show_items_table.RowTemplate.Height = 24;
+            this.Show_items_table.ShowCellToolTips = false;
+            this.Show_items_table.Size = new System.Drawing.Size(1012, 555);
+            this.Show_items_table.TabIndex = 32;
+            this.Show_items_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Show_restaurants_table_CellClick);
+            // 
             // MyOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,8 +117,8 @@ namespace LoginUI
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1047, 645);
             this.ControlBox = false;
-            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.Show_items_table);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.Restaurant_name);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -175,8 +137,8 @@ namespace LoginUI
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Restaurant_name;
-        private Guna.UI2.WinForms.Guna2DataGridView Show_items_table;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private System.Windows.Forms.DataGridView Show_items_table;
     }
 }
 

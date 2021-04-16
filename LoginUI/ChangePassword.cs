@@ -18,6 +18,7 @@ namespace LoginUI
     {
 
         public SqlConnection connection = new SqlConnection();
+        public string sqlConnectionString = @"Data Source=DBMS-hotelDB.mssql.somee.com;Initial Catalog=DBMS-hotelDB;Persist Security Info=True;User ID=shahjugalr_SQLLogin_1;Password=akhqbsikty";
 
 
         public string emailAddress = "";
@@ -26,6 +27,7 @@ namespace LoginUI
         public ChangePassword()
         {
             InitializeComponent();
+
         }
 
         private void ComeByMistakeButton_Click(object sender, EventArgs e)
@@ -43,9 +45,16 @@ namespace LoginUI
             {
                 if (NewPasswordField.Text == ConfirmNewPasswordField.Text)
                 {
-                   // string cmdtext = $"UPDATE credentials  SET PASSWORD = '{NewPasswordField.Text}' WHERE username = '{Settings.Default["LoggedUsername"].ToString()}'";
+                    // string cmdtext = $"UPDATE credentials  SET PASSWORD = '{NewPasswordField.Text}' WHERE username = '{Settings.Default["LoggedUsername"].ToString()}'";
 
                     string cmdtext = $"[dbo].[change_password] '{Settings.Default["LoggedUsername"].ToString()}' , '{NewPasswordField.Text}'";
+
+
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.ConnectionString = sqlConnectionString;
+                        connection.Open();
+                    }
 
 
                     SqlCommand cmd = new SqlCommand(cmdtext, connection);
@@ -60,18 +69,24 @@ namespace LoginUI
                         this.Close();
 
                     }
-                    catch (Exception eror)
+                    catch (SqlException eror)
                     {
-                        MessageBox.Show(eror.Message);
+                        MessageBox.Show(eror.Errors[1].Message);
                     }
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Both Passwords must Match!");
                 }
 
 
-                Proceed.Enabled = true;
             }
+            else {
+
+                MessageBox.Show("Old Password Not Correct");
+            }
+
+            Proceed.Enabled = true;
         }
 
     }

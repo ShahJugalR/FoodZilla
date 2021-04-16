@@ -191,13 +191,23 @@ new Dictionary<int, string>();
                     profileUI.Show();*/
 
                     HomePage home = new HomePage();
-
+                        
                     home.connection = SQLconnecter.sqlConnection;
 
                     home.Show();
 
                     this.Close();
                 }
+                else
+                {
+
+                    MessageBox.Show("Wrong Credentials");
+                }
+            }
+            else
+            {
+
+                MessageBox.Show("Wrong Credentials");
             }
         }
 
