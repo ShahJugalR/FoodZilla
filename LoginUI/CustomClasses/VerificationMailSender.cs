@@ -35,7 +35,6 @@ namespace LoginUI.CustomClasses
                 mail.IsBodyHtml = true;
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("developer.dbmsproject@gmail.com", "ShahJugalR.123");
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.Send(mail);
