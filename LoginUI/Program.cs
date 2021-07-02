@@ -27,6 +27,8 @@ namespace LoginUI
             LoginForm form = new LoginForm(true);
 
 
+                //SmtpServer.Credentials = new System.Net.NetworkCredential("developer.dbmsproject@gmail.com", "ShahJugalR.123");
+            
             form.Show();
 
             Application.Run();
